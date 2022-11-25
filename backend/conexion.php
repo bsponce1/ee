@@ -14,7 +14,5 @@ if($conn -> connect_error){
     die('Conexion fallida: ' . $conn -> connect_error);
 }else{
   die('Conexión correctamente exitosa');
-
 }
-
 ?>
