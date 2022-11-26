@@ -24,4 +24,5 @@
   > Archivos que se deben crear son:
   
     - Contactanos.html
-  se debe aplicar los diseños en las demas vistas.
+    
+    se debe aplicar los diseños en las demas vistas.
