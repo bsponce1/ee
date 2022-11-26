@@ -9,12 +9,12 @@
     - index.php
     - login.html y php
     - Registro.html y php
-  Se debe poder ingresar si es cliente a los del cliente y no poder ingresar al de administrador.
+    Se debe poder ingresar si es cliente a los del cliente y no poder ingresar al de administrador.
  3. Alquier de bicicletas (Jose Caceres).
   > Archivos que debe crear son:
   
     - alquilerdebicicleta.html y php
-  Se queda a criterio propio la impelementación en este apartado el cliente debe poder registrar el alquiler de la bicicleta.
+     Se queda a criterio propio la impelementación en este apartado el cliente debe poder registrar el alquiler de la bicicleta.
  4. CRUD o funciones de administrador (Brayan Ponce).
   > Archivos a crear son:
   
