@@ -1,0 +1,129 @@
+
+body{
+    background-image: linear-gradient(to right top, #2f38f2, #2f3cf0, #2f3fee, #2f42ec, #3045ea, #3047e7, #3048e3, #304ae0, #304bdb, #304bd6, #304cd0, #314ccb);
+    height: 100vh;
+}
+
+nav {
+    background-color: rgb(49, 48, 48);
+    width: 98%;
+    
+}
+
+.nav-link {
+    color: rgb(136, 147, 156);
+    font-size: 1.2em;
+}
+
+.nav-link:hover{
+    color: azure;
+}
+
+
+.seccion1{
+    margin: 1%;
+    background-color: aliceblue;
+    height: 100vh;
+}
+
+/*estilos de login*/
+#radius-shape-1 {
+    height: 220px;
+    width: 220px;
+    top: -60px;
+    left: -130px;
+    background: radial-gradient(#28caa2, #597cee);
+    overflow: hidden;
+  }
+  
+  #radius-shape-2 {
+    border-radius: 38% 62% 63% 37% / 70% 33% 67% 30%;
+    bottom: -60px;
+    right: -110px;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(#28caa2, #597cee);
+    overflow: hidden;
+  }
+  
+  #radius-shape-3 {
+    border-radius: 38% 62% 63% 37% / 70% 33% 67% 30%;
+    bottom: -300px;
+    right: 1110px;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(#28caa2, #597cee);
+    overflow: hidden;
+  }
+  
+  .bg-glass {
+    background-color: hsla(0, 0%, 100%, 0.9) !important;
+    backdrop-filter: saturate(200%) blur(25px);
+  }
+  .colors {
+    background: radial-gradient(#4bc9c9, #32b6c7);
+    border-radius: 35px;
+    
+  }
+  
+  .titulo {
+    text-align: center;
+  }
+
+
+/*Estilos de registro*/
+.contenedor{
+    padding: 1%;
+    background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    margin: 1% 35% 0 35%;
+}
+
+@media (max-width: 768px) {
+    #radius-shape-1 {
+        height: 120px;
+        width: 120px;
+        top: -60px;
+        left: -10px;
+        background: radial-gradient(#28caa2, #597cee);
+        overflow: hidden;
+      }
+      
+      #radius-shape-2 {
+        border-radius: 38% 62% 63% 37% / 70% 33% 67% 30%;
+        bottom: -25px;
+        right: 10px;
+        width: 100px;
+        height: 100px;
+        background: radial-gradient(#28caa2, #597cee);
+        overflow: hidden;
+      }
+      
+      #radius-shape-3 {
+        border-radius: 38% 62% 63% 37% / 70% 33% 67% 30%;
+        bottom: -80px;
+        right: 200px;
+        width: 130px;
+        height: 130px;
+        background: radial-gradient(#28caa2, #597cee);
+        overflow: hidden;
+      }
+      #titulologin{
+        margin: 0;
+        padding: 0;
+        font-size: 25px;
+        margin-bottom: 0;
+      }
+
+      #parrafologin{
+        display: none;
+      }
+
+      #box-title2{
+        margin: 0;
+
+      }
+
+      #box-title{
+        margin: 0;
+      }
+}
