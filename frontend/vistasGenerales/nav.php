@@ -10,7 +10,6 @@
         </a>
         <ul class="nav ">
             <li class="nav-item"><a class="nav-link " href="../../../../alquiler-de-bicicleta/proyectoU1alquilerB/frontend/home.php">Home</a></li>
-            <li class="nav-item"><a class="nav-link " href="../../../../alquiler-de-bicicleta/proyectoU1alquilerB/frontend/bicicletas.php">Bicicletas</a></li>
             <li class="nav-item"><a class="nav-link " href="../../../../alquiler-de-bicicleta/proyectoU1alquilerB/frontend/contactanos.php">Contactanos</a></li>
             <li class="nav-item"><a class="nav-link " href="../../../../alquiler-de-bicicleta/proyectoU1alquilerB/frontend/login.php">login</a></li>
         </ul>

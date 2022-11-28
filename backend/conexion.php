@@ -3,7 +3,7 @@
 define('SERVENAME','localhost');
 define('USERNAME','root');
 define('PASSWORD','');
-define('DBNAME','alquilerdebicicleta');
+define('DBNAME','alquilerdebicicletas');
 
 
 //Creacion de la conexion usando mysqli
@@ -12,7 +12,5 @@ $conn = new mysqli(SERVENAME, USERNAME, PASSWORD, DBNAME);
 //Controlar la conexion 
 if($conn -> connect_error){
     die('Conexion fallida: ' . $conn -> connect_error);
-}else{
-  die('Conexión correctamente exitosa');
 }
 ?>

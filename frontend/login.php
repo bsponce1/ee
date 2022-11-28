@@ -27,7 +27,7 @@
               <div class="card bg-glass colors">
                 <div class="card-body px-4 py-5 px-md-5 colors">
                     <!--Formulario de login-->
-                  <form class="colors" action="accesoUsuario.php" method="post">
+                  <form class="colors" action="../../../../alquiler-de-bicicleta/proyectoU1alquilerB/backend/SESIONES/accesoUsuario.php" method="post">
                     <!-- titulo de inicio -->
            
                     <div class="row titulo">
@@ -36,13 +36,13 @@
       
                     <!-- imput de usuario -->
                     <div class="form-outline mb-4">
-                      <input type="text" id="form3Example3" class="form-control" name="usuario" />
-                      <label class="form-label" for="form3Example3">Usuario</label>
+                      <input type="text" id="form3Example3" class="form-control" name="usuario" required />
+                      <label class="form-label" for="form3Example3" >Usuario</label>
                     </div>
       
                     <!-- Password input -->
                     <div class="form-outline mb-4">
-                      <input type="password" id="form3Example4" class="form-control" name="contrasenia"/>
+                      <input type="password" id="form3Example4" class="form-control" name="contrasenia" required/>
                       <label class="form-label" for="form3Example4">Contraseña</label>
                     </div>
       
@@ -53,7 +53,7 @@
                     </button>
                     <a href="../../../../alquiler-de-bicicleta/proyectoU1alquilerB/frontend/home.php" class="btn btn-dark btn-block mb-4">Cancelar</a>
                     <br>
-                    <span>Si no tienes cuenta</span> <a href="../../../../alquiler-de-bicicleta/proyectoU1alquilerB/frontend/registro.php">registrate</a>
+                    <span>Si no tienes cuenta</span> <a href="../../../../alquiler-de-bicicleta/proyectoU1alquilerB/backend/SESIONES/registroUsuario.php">registrate</a>
       
                   </form>
                 </div>

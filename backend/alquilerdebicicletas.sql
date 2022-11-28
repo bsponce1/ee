@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 18-11-2022 a las 05:23:39
+-- Tiempo de generación: 28-11-2022 a las 06:46:08
 -- Versión del servidor: 10.4.25-MariaDB
 -- Versión de PHP: 8.0.23
 
@@ -31,6 +31,14 @@ CREATE TABLE `cargo` (
   `id_cargo` int(11) NOT NULL,
   `descripcioncargo` varchar(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `cargo`
+--
+
+INSERT INTO `cargo` (`id_cargo`, `descripcioncargo`) VALUES
+(1, 'administrador'),
+(2, 'cliente');
 
 -- --------------------------------------------------------
 
@@ -93,6 +101,16 @@ CREATE TABLE `usuario` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
+-- Volcado de datos para la tabla `usuario`
+--
+
+INSERT INTO `usuario` (`id_usuario`, `nombreusuario`, `apellidousuario`, `correousuario`, `telefonousuario`, `usuario`, `contrasena`, `id_cargo`) VALUES
+(2, 'Wilmer', 'Shagñay', 'wilmerelmaximo@gmail.com', '0941351352', 'admin', 'admin', 1),
+(3, 'Erika', 'Benalcazar', 'erika@espe.edu.ec', '0985456151', 'erika', '123', 2),
+(4, 'Wilmer', 'Shagñay', 'wmshagnay@gmail.com', '0979941013', 'wilmerxx', '123', 2),
+(5, 'Miguel', 'Shagñay', 'miguel@gamil.com', '0994151351', 'miguel', '123', 2);
+
+--
 -- Índices para tablas volcadas
 --
 
@@ -139,7 +157,7 @@ ALTER TABLE `usuario`
 -- AUTO_INCREMENT de la tabla `cargo`
 --
 ALTER TABLE `cargo`
-  MODIFY `id_cargo` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_cargo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT de la tabla `estado`
@@ -163,7 +181,7 @@ ALTER TABLE `reserva`
 -- AUTO_INCREMENT de la tabla `usuario`
 --
 ALTER TABLE `usuario`
-  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- Restricciones para tablas volcadas

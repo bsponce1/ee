@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-   <?php include 'vistasGenerales/cabecera.html';?>
-</head>
+<html lang="es">
+
+<?php include 'vistasGenerales/cabecera.html';?>
+
 <body>
     
     <div class="contenedor">
         <form action="<?php echo $_SERVER['PHP_SELF']?>" method = "post" enctype="multipart/form-data" class="form-control">
-            <h2 class="text-center">Agregar un Nuevo Usuario</h2>
-             <p class="text-center">Llene este formulario para agregar un usuario a la base de datos</p>
+            <h2 class="text-center">Registro</h2>
+             <p class="text-center">Llene todos los campos para registrar su cuenta</p>
             <div class="form-group ">
                 <div class="form-control">
                     <label class="form-text" for="">Nombre</label>
@@ -25,11 +25,12 @@
 
             </div>
 
-            <div class="form-group">
-                <div class="form-control">
-                    <label class="form-text" for="">Cedula</label>
-                    <input type="text" name="cedula" class="form-control" required>
+            <div class="form-group ">
+                <div  class="form-control">
+                    <label class="form-text" for="">Correo</label>
+                    <input type="email" name="correo" class="form-control" required>
                 </div>
+        
             </div>
 
             <div class="form-group ">
@@ -40,29 +41,29 @@
             </div>
 
             <div class="form-group ">
-                <div  class="form-control">
-                    <label class="form-text" for="">Dirección</label>
-                    <input type="text" name="direccion" class="form-control" required>
+                <div class="form-control">
+                    <label class="form-text" for="">Usuario</label>
+                    <input type="text" name="usuario"  class="form-control" required>
                 </div>
-            </div>
-
-            <div class="form-group ">
-                <div  class="form-control">
-                    <label class="form-text" for="">Correo</label>
-                    <input type="text" name="correo" class="form-control" required>
-                </div>
-        
             </div>
 
             <div class="form-group ">
                 <div class="form-control">
+                    <label class="form-text" for="">Contraseña</label>
+                    <input type="password" name="contrasenia"  class="form-control" required>
+                </div>
+            </div>
+
+            <!-- <div class="form-group ">
+                <div class="form-control">
                     <label class="form-text" for="fotousuario">Foto</label> <br>
                     <input type="file" class="custom-file-input" id="image" name="fotousuario" lang="es" required>
                 </div>
-            </div>
+            </div> -->
+
             <div class="justify-content-center align-content-center text-center mb-5 mt-2">
                 <input class="btn bg-info" type="submit" value="agregar">
-              <a class="btn bg-danger" href="../index.php">Cancelar</a>
+              <a class="btn bg-danger" href="../../../../alquiler-de-bicicleta/proyectoU1alquilerB/frontend/login.php">Cancelar</a>
             </div>
             
     
