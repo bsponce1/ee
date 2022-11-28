@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <?php include 'vistasGenerales/cabecera.html';?>
+    <?php include 'frontend/vistasGenerales/cabecera.html';?>
 </head>
 <body >
    
-    <section class="" >
-        <div class="container px-xl-5 py-xxl-5 px-md-5 text-center text-lg-start" id="box-title">
+    <section  >
+        <div class="container px-xl-5 py-xxl-5 px-md-5 text-center text-lg-start my-5">
           <div class="row gx-lg-5 align-items-center ">
-            <div class="col-lg-6 mb-5 mb-lg-0" id="box-title2">
-                <img src="img/logo-horizontal.png" alt="" width="60%">
-              <h1 class=" display-5 fw-bold ls-tight" id="titulologin" style="color: hsl(218, 81%, 95%)">
+            <div class="col-lg-6 mb-5 mb-lg-0">
+                <img src="frontend/img/logo-horizontal.png" alt="" width="60%">
+              <h1 class="my-5 display-5 fw-bold ls-tight" style="color: hsl(218, 81%, 95%)">
                  Alquiler de bicicletas <br />
                 <span style="color: hsl(218, 81%, 75%)">La forma de ayudar al medio ambiente</span>
               </h1>
-              <p class="mb-4 opacity-70" id="parrafologin" style="color: hsl(218, 81%, 85%)">
+              <p class="mb-4 opacity-70" style="color: hsl(218, 81%, 85%)">
                 Es ahora de aportar al medio ambiente con el uso de las bicicletas y aportar tambien a tú salud, para ver cambios hay que comenzar por uno mismo. 
               </p>
             </div>
@@ -32,6 +32,7 @@
            
                     <div class="row titulo">
                         <h1>Inicio de sesión</h1>
+                        <p>Solo para administradores</p>
                     </div>
       
                     <!-- imput de usuario -->
@@ -51,9 +52,6 @@
                     <button type="submit" value="submit" class="btn btn-primary btn-block mb-4">
                       Iniciar
                     </button>
-                    <a href="../../../../alquiler-de-bicicleta/proyectoU1alquilerB/frontend/home.php" class="btn btn-dark btn-block mb-4">Cancelar</a>
-                    <br>
-                    <span>Si no tienes cuenta</span> <a href="../../../../alquiler-de-bicicleta/proyectoU1alquilerB/frontend/registro.php">registrate</a>
       
                   </form>
                 </div>
