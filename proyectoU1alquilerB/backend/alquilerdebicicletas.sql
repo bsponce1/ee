@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 28-11-2022 a las 23:19:20
+-- Tiempo de generación: 29-11-2022 a las 12:41:25
 -- Versión del servidor: 10.4.25-MariaDB
--- Versión de PHP: 8.1.10
+-- Versión de PHP: 8.0.23
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -65,7 +65,7 @@ CREATE TABLE `productos` (
   `cantidad` int(11) NOT NULL,
   `tarifa` decimal(4,2) NOT NULL,
   `descripcionProducto` varchar(50) NOT NULL,
-  `imagenpro` varchar(3000) NOT NULL
+  `imagenpro` mediumtext NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -73,7 +73,7 @@ CREATE TABLE `productos` (
 --
 
 INSERT INTO `productos` (`id_producto`, `categoria`, `marca`, `modelo`, `cantidad`, `tarifa`, `descripcionProducto`, `imagenpro`) VALUES
-(1, 'Urbana', 'Shimano', 'R29', 5, '15.00', 'Urbana con RIN 29', '');
+(2, 'montañera', 'SO', '254K', 6, '12.00', 'Todo terreno', 'img/193686-300-300.png');
 
 -- --------------------------------------------------------
 
@@ -177,7 +177,7 @@ ALTER TABLE `estado`
 -- AUTO_INCREMENT de la tabla `productos`
 --
 ALTER TABLE `productos`
-  MODIFY `id_producto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id_producto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT de la tabla `reserva`

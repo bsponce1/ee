@@ -75,10 +75,14 @@ nav {
 .contenedor{
     padding: 1%;
     background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
-    margin: 1% 35% 0 35%;
+    margin: 2% 35% 0 35%;
 }
 
 @media (max-width: 768px) {
+    .contenedor{
+        padding: 1%;
+        margin: 1% 10% 0 10%;
+    }
     #radius-shape-1 {
         height: 120px;
         width: 120px;
@@ -126,4 +130,6 @@ nav {
       #box-title{
         margin: 0;
       }
+
+      
 }
