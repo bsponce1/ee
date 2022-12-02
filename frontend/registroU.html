@@ -11,7 +11,7 @@
         <form action="<?php echo $_SERVER['PHP_SELF']?>" method = "post" enctype="multipart/form-data" class="form-control">
             <h2 class="text-center">Registro</h2>
              <p class="text-center">Llene todos los campos para registrar su cuenta</p>
-            <div class="form-group ">
+             <div class="form-group ">
                 <div class="form-control">
                     <label class="form-text" for="">Nombre</label>
                     <input type="text" name="nombre" class="form-control" required>
@@ -56,16 +56,14 @@
                 </div>
             </div>
 
-            <!-- <div class="form-group ">
-                <div class="form-control">
-                    <label class="form-text" for="fotousuario">Foto</label> <br>
-                    <input type="file" class="custom-file-input" id="image" name="fotousuario" lang="es" required>
-                </div>
-            </div> -->
-
+            <select name="cargo" class="form-select" id="estado">
+                <option >Opciones</option>
+                <option value="1">administrador</option>
+                <option value="2">cliente</option>
+            </select>
             <div class="justify-content-center align-content-center text-center mb-5 mt-2">
                 <input class="btn bg-info" type="submit" value="agregar">
-              <a class="btn bg-danger" href="../../../../alquiler-de-bicicleta/proyectoU1alquilerB/frontend/login.php">Cancelar</a>
+              <a class="btn bg-danger" href="../../../../alquiler-de-bicicleta/proyectoU1alquilerB/backend/Admin/dashboard.php">Cancelar</a>
             </div>
             
     

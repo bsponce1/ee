@@ -1,40 +1,31 @@
-<?php 
-      
-       if ($_SESSION['id'] == 2 ) {
-           header('location:home.php');
-       }
-
-       if ($_SESSION['id'] == null ) {
-        header('location:home.php');
-        }
-       
-?>
 
 <!DOCTYPE html>
 <html lang="es">
 
 <head>
    <?php include 'vistasGenerales/cabecera.html';?>
-    <title>Usuarios </title>
+    <title>Alquiler </title>
 </head>
 
 <body>
-    <div class="">
-        <h2 class="text-center mt-3">Usuarios Registrados</h2>
-        <h4><a class="btn btn-primary acciones" href="../../../../alquiler-de-bicicleta/proyectoU1alquilerB/backend/Admin/agregar.php">Agregar Bicicletas</a></h4>
-       
+    <div class="" >
+        <h2 class="text-center mt-3">Registros de alquiler</h2>
         <table class="table table-info">
             <thead class="table-dark">
                 <tr>
                     <th scope="col">#</th>
-                    <th scope="col"></th>
-                    <th scope="col">Categoria</th>
-                    <th scope="col">Marca</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Apellido</th>
+                    <th scope="col">Correo</th>
+                    <th scope="col">Télefono</th>
+                    <th scope="col">Fecha Reserva</th>
+                    <th scope="col">Feha Entrega</th>
+                    <th scope="col">Días</th>
                     <th scope="col">Modelo</th>
-                    <th scope="col">Cantidad</th>
                     <th scope="col">Tarifa</th>
-                    <th scope="col">Descripcion</th>
-                    <th scope="col">Operaciones</th>
+                    <th scope="col">Total</th>
+                    <th scope="col">Estado</th>
+                    <th scope="col">Cambiar estado</th>
                 </tr>
             </thead>
             <tbody>
@@ -47,18 +38,24 @@
                         $i=$i+1;
                         echo '<tr>';
                         echo '<td>'.$i. '</td>';
-                        echo '<td class="text-center"><img src=../../../proyectoU1alquilerB/' . $row['imagenpro'] . ' width="120px" height="120px"></td>';
-                        echo '<td>'. $row['categoria'].'</td>';
-                        echo '<td>'. $row['marca']. '</td>';
+                        echo '<td>'. $row['nombreusuario'].'</td>';
+                        echo '<td>'. $row['apellidousuario']. '</td>';
+                        echo '<td>'. $row['correousuario'].'</td>';
+                        echo '<td>'. $row['telefonousuario'].'</td>';
+                        echo '<td>'. $row['fechaReserva'].'</td>';
+                        echo '<td>'. $row['fechaEntrega'].'</td>';
+                        echo '<td>'. $row['dias'].'</td>';
                         echo '<td>'. $row['modelo'].'</td>';
-                        echo '<td>'. $row['cantidad'].'</td>';
                         echo '<td>'. $row['tarifa'].'</td>';
-                        echo '<td>'. $row['descripcionProducto'].'</td>';
+                        echo '<td>'. $row['totalreserva'].'</td>';
+                        echo '<td>'. $row['descripcionestado'].'</td>';
                         echo '<td class = "p-2">';
-                        echo '<a class="btn btn-success acciones m-2" href="../../../proyectoU1alquilerB/backend/Admin/modificar.php?id='.$row['id_producto'].'">Actualizar </a>';
-                        echo '<a href="#" class="btn btn-success acciones" onclick="preguntar(' . $row['id_producto'] .')">Eliminar </a>';
+                     
+                        echo '<a type="submit" class="btn btn-success acciones m-2" href="../../../proyectoU1alquilerB/backend/Admin/modificarAlquiler.php?id='.$row['id_reserva'].'" value="">Cambiar</a>';
+
                         echo '</td>';
                         echo '</tr>';
+                        
                     }
                     $result -> free();
                 }else{
@@ -82,7 +79,7 @@
                 window.location.href = "eliminar.php?id="+idusuario;
             } else {
                 return false;
-                header("location: dashboard.php");
+                header("location: admin.php");
             }
         }
     </script>

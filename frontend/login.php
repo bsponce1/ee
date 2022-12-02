@@ -11,7 +11,7 @@
             <div class="col-lg-6 mb-5 mb-lg-0" id="box-title2">
                 <img src="img/logo-horizontal.png" alt="" width="60%">
               <h1 class=" display-5 fw-bold ls-tight" id="titulologin" style="color: hsl(218, 81%, 95%)">
-                 Alquiler de bicicletas <br />
+                 Alquiler de Bicicletas <br />
                 <span style="color: hsl(218, 81%, 75%)">La forma de ayudar al medio ambiente</span>
               </h1>
               <p class="mb-4 opacity-70" id="parrafologin" style="color: hsl(218, 81%, 85%)">
@@ -36,13 +36,13 @@
       
                     <!-- imput de usuario -->
                     <div class="form-outline mb-4">
-                      <input type="text" id="form3Example3" class="form-control" name="usuario" required />
+                      <input type="text" id="form3Example3" class="form-control" name="usuario" required >
                       <label class="form-label" for="form3Example3" >Usuario</label>
                     </div>
       
                     <!-- Password input -->
                     <div class="form-outline mb-4">
-                      <input type="password" id="form3Example4" class="form-control" name="contrasenia" required/>
+                      <input type="password" id="form3Example4" class="form-control" name="contrasenia" required>
                       <label class="form-label" for="form3Example4">Contraseña</label>
                     </div>
       
@@ -51,9 +51,9 @@
                     <button type="submit" value="submit" class="btn btn-primary btn-block mb-4">
                       Iniciar
                     </button>
-                    <a href="../../../../alquiler-de-bicicleta/proyectoU1alquilerB/frontend/home.php" class="btn btn-dark btn-block mb-4">Cancelar</a>
+                    <a href="../../../../alquiler-de-bicicleta/proyectoU1alquilerB/frontend/home.php" class="btn btn-dark btn-block mb-4">Regresar</a>
                     <br>
-                    <span>Si no tienes cuenta</span> <a href="../../../../alquiler-de-bicicleta/proyectoU1alquilerB/backend/SESIONES/registroUsuario.php">registrate</a>
+                    <span>Aún no tienes cuenta</span> <a href="../../../../alquiler-de-bicicleta/proyectoU1alquilerB/backend/SESIONES/registroUsuario.php">Registrate</a>
       
                   </form>
                 </div>
